@@ -46,7 +46,7 @@ class cifarDS(Dataset):
 
         image = self.getImage(path)
         classdir = os.path.basename(os.path.dirname(path))
-        classname = class_dict[classdir]
+        classname = self.class_dict[classdir]
 
         # y_onehot = torch.nn.functional.one_hot(torch.tensor(classname), num_classes=10).float()
 
